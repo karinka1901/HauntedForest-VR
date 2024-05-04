@@ -9,6 +9,7 @@ public class PLayersHealth : MonoBehaviour
 {
     public int health;
     public bool isDead;
+    public bool gameWon;
     public bool isHit;
     public int enemyHit;
 
@@ -16,6 +17,7 @@ public class PLayersHealth : MonoBehaviour
 
     // FROM CANVAS
     public GameObject deathStuff;
+    public GameObject wonStuff;
     public HealthBar healthBar;
 
     public Text enemyKilled;
@@ -25,6 +27,7 @@ public class PLayersHealth : MonoBehaviour
         //USUALLy 100, 20 FOR DEBUGGING
         health = 0;
         deathStuff.SetActive(false);
+        wonStuff.SetActive(false);
         
     }
 
@@ -49,6 +52,12 @@ public class PLayersHealth : MonoBehaviour
                 ReloadLevel();
             }
         }
+        if(gameWon)
+        {
+            wonStuff.SetActive(true);
+            enemyKilled.text = "Enemies Killed: " + enemyHit;
+            
+        }
     }
 
     // USED IN CANVAS BUTTON (DEATH STUFF)
@@ -68,9 +77,12 @@ public class PLayersHealth : MonoBehaviour
             health += 1;
             Debug.Log("Player is hit " + health);
            healthBar.UpdateHealth(health);
-
-
             
+        }
+
+        if (other.gameObject.tag == "Treasure")
+        {
+            gameWon = true;
         }
     }
 }

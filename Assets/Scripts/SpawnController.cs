@@ -19,7 +19,7 @@ public class SpawnController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!player.isDead)
+        if (!player.isDead || !player.gameWon)
         {
             SpawnEnemies(spawnRate);
         }

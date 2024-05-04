@@ -15,6 +15,7 @@ TagManager:
   - Quit
   - Play
   - QuitGame
+  - Treasure
   layers:
   - Default
   - TransparentFX
