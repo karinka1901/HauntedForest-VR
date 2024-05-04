@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class CountdownTimer : MonoBehaviour
 {
-    public float totalTime = 180.0f; 
+    public float totalTime = 60.0f; 
     private float currentTime;
     public PLayersHealth playersHealth;
 
@@ -19,8 +19,11 @@ public class CountdownTimer : MonoBehaviour
         // Update the current time
         currentTime -= Time.deltaTime;
 
- 
-        DisplayTime(currentTime);
+        if (playersHealth.gameON)
+        {
+            DisplayTime(currentTime);
+        }
+        
 
         if (currentTime <= 0)
         {

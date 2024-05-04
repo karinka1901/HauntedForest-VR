@@ -9,7 +9,7 @@ public class FireBullets : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform bulletSpawnPoint;
     public float bulletSpeed = 20f;
-    private bool inHands = false;
+
 
     public InputActionProperty pinchAnimationAction;
     public InputActionProperty gripAnimationAction;

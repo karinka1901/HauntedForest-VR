@@ -250,7 +250,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.74750805
+  m_Radius: 0.88
   m_Height: 2.7696729
   m_Direction: 1
   m_Center: {x: 0, y: -0.28534603, z: -0.056658745}
@@ -267,10 +267,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitParticles: {fileID: 1220021716969541983}
-  speed: 3
+  speed: 4
   playerLocation: {fileID: 467776430870605514, guid: 6fce5c2e0a3c6b44bb26383fef96b3c9, type: 3}
   enemyDestination: {x: 0, y: 0, z: 0}
-  playersHealth: {fileID: 3994031183614190723, guid: 6fce5c2e0a3c6b44bb26383fef96b3c9, type: 3}
+  playersHealth: {fileID: 4186159371409385036, guid: 36df8144f0eefbd499426ab808f5992f, type: 3}
   damageNum: 1
   sfxControl: {fileID: 7719377321385001559, guid: fd4653c0355fe7b4686504b66b57148c, type: 3}
 --- !u!65 &1912591390733200406

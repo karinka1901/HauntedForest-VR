@@ -16,6 +16,7 @@ TagManager:
   - Play
   - QuitGame
   - Treasure
+  - Hand
   layers:
   - Default
   - TransparentFX

@@ -5,10 +5,23 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject objectToSpawn; // Drag your prefab to this field in the Inspector
     public Transform[] spawnPos;
+    public PLayersHealth player;
+    private bool hasSpawned = false;
+
 
     void Start()
     {
-        SpawnObject();
+        
+
+    }
+
+    private void Update()
+    {
+        if (player.gameON && !hasSpawned)
+        {
+            SpawnObject();
+            hasSpawned = true;
+        }
     }
 
     void SpawnObject()

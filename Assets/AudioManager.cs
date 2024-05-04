@@ -21,7 +21,7 @@ public class AudioManager : MonoBehaviour
 
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+
         //   musicSource.volume = 0.5f;
 
     }
@@ -38,7 +38,7 @@ public class AudioManager : MonoBehaviour
 
     public void PlayMusic()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 0)
+        if (SceneManager.GetActiveScene().buildIndex == 1)
         {
             if (musicSource.clip != menuBackground)
             {
@@ -46,9 +46,10 @@ public class AudioManager : MonoBehaviour
                 musicSource.clip = menuBackground;
                 musicSource.Play();
             }
+
         }
 
-        if (SceneManager.GetActiveScene().buildIndex == 1)
+        if (SceneManager.GetActiveScene().buildIndex == 0)
         {
             if (musicSource.clip != gameBackground)
             {

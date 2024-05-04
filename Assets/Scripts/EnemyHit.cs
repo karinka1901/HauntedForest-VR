@@ -43,16 +43,19 @@ public class EnemyHit : MonoBehaviour
 
     void Update()
     {
-        if (!playersHealth.isDead)
+        if (!playersHealth.isDead || !playersHealth.gameWon)
         {
             enemyDestination = playerLocation.GetComponent<Transform>().position;
             enemy.SetDestination(enemyDestination);
             Quaternion rotation = Quaternion.LookRotation(enemyDestination - transform.position);
             transform.rotation = rotation * Quaternion.Euler(0, 90, 0);
         }
-        else
+        if(playersHealth.isDead || playersHealth.isCollected)
         {
-            enemyDestination = this.transform.position;
+            //enemyDestination = this.transform.position;
+            this.gameObject.SetActive(false);
+            Destroy(this.gameObject);
+            return;
         }
 
         

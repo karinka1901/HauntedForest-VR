@@ -19,9 +19,18 @@ public class SpawnController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!player.isDead || !player.gameWon)
+        //Debug.Log(player.gameON);
+        if (player.gameON)
         {
             SpawnEnemies(spawnRate);
+ 
+              
+        }
+
+        if(player.gameWon || player.isDead)
+        {
+            Destroy(this);
+            
         }
     }
 
