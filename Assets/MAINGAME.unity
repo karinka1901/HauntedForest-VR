@@ -12145,7 +12145,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 13.45}
+  m_AnchoredPosition: {x: 0, y: 11.7}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1424085221
@@ -17900,10 +17900,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 26
+    m_FontSize: 17
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 1
@@ -18699,10 +18699,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 26
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 8
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 1
@@ -18710,7 +18710,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Enemies killed: '
+  m_Text: 'Enemies killed:
+
+'
 --- !u!4 &1369371830233121296
 Transform:
   m_ObjectHideFlags: 0
@@ -20357,6 +20359,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6222179450971279780, guid: 18f02a2823baff44f8d4afe09abe5f7e, type: 3}
+      propertyPath: totalTime
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222179450971279780, guid: 18f02a2823baff44f8d4afe09abe5f7e, type: 3}
       propertyPath: playersHealth
       value: 
       objectReference: {fileID: 5082850154102498549}
@@ -20723,7 +20729,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 17.7}
+  m_AnchoredPosition: {x: 0, y: 14.09}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3485366574251513421
@@ -21952,7 +21958,8 @@ MonoBehaviour:
   deathStuff: {fileID: 7086591077749221427}
   wonStuff: {fileID: 9165606563709549935}
   healthBar: {fileID: 682538595}
-  enemyKilled: {fileID: 1359769787721137506}
+  enemyKilledWIN: {fileID: 702109706938316127}
+  enemyKilledLOSS: {fileID: 1359769787721137506}
   treasure: {fileID: 8086096786294273745, guid: 69b48a147ebdc504aa0ae110e4a3bdaa, type: 3}
   nightSky: {fileID: 1642005625696080}
   daySky: {fileID: 1990314575}
@@ -22026,7 +22033,7 @@ RectTransform:
   m_GameObject: {fileID: 6722089676821612945}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.26600075}
-  m_LocalScale: {x: 0.16720001, y: 0.16720001, z: 0.16720001}
+  m_LocalScale: {x: 0.38999996, y: 0.38999996, z: 0.38999996}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2708476773629263376}
@@ -22327,7 +22334,7 @@ RectTransform:
   m_GameObject: {fileID: 5399813778620697579}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.26600075}
-  m_LocalScale: {x: 0.16720001, y: 0.16720001, z: 0.16720001}
+  m_LocalScale: {x: 0.26, y: 0.26, z: 0.26}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 9091412019630704506}
@@ -22812,7 +22819,7 @@ GameObject:
   - component: {fileID: 5837698084928896414}
   - component: {fileID: 1359769787721137506}
   m_Layer: 5
-  m_Name: Enemies
+  m_Name: Enemies2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

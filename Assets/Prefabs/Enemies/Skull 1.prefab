@@ -52,7 +52,7 @@ MonoBehaviour:
   playerLocation: {fileID: 467776430870605514, guid: 6fce5c2e0a3c6b44bb26383fef96b3c9, type: 3}
   enemyDestination: {x: 0, y: 0, z: 0}
   playersHealth: {fileID: 4186159371409385036, guid: 36df8144f0eefbd499426ab808f5992f, type: 3}
-  damageNum: 3
+  damageNum: 1
   sfxControl: {fileID: 7719377321385001559, guid: fd4653c0355fe7b4686504b66b57148c, type: 3}
 --- !u!195 &3788515456022315102
 NavMeshAgent:

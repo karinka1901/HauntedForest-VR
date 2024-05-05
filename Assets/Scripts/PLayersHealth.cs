@@ -21,7 +21,8 @@ public class PLayersHealth : MonoBehaviour
     public GameObject wonStuff;
     public HealthBar healthBar;
 
-    public Text enemyKilled;
+    public Text enemyKilledWIN;
+    public Text enemyKilledLOSS;
 
     public TreasureScript treasure;
 
@@ -62,7 +63,8 @@ public class PLayersHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
+     
+        //Debug.Log("isdead: " + isDead + " - isColleceted" + isCollected + " - gamewon: " + gameWon + " - gameOn: " + gameON);
         if (isCollected == true)
         {
             gameWon = true;
@@ -71,6 +73,7 @@ public class PLayersHealth : MonoBehaviour
             Destroy(fog);
             nightSky.SetActive(false);
             daySky.SetActive(true);
+            enemyKilledWIN.text = "Enemies Killed: " + enemyHit;
         }
 
         if (health >= 5)
@@ -80,12 +83,13 @@ public class PLayersHealth : MonoBehaviour
             //Destroy(this.gameObject);
         }
         
-        if (isDead)
+        if (isDead && !isCollected)
         {
+            //Debug.Log("87");
             // deathStuff.SetActive(true);
             gameMenu.SetActive(false);
             deathStuff.SetActive(true);
-            enemyKilled.text = "Enemies Killed: " + enemyHit;
+            enemyKilledLOSS.text = "Enemies Killed: " + enemyHit;
             Debug.Log("Player is dead");
             // FOR DEBUGGING PURPOSES
             if (Input.GetKeyDown(KeyCode.R))
@@ -93,12 +97,7 @@ public class PLayersHealth : MonoBehaviour
                 ReloadLevel();
             }
         }
-        if(gameWon)
-        {
-          //  wonStuff.SetActive(true);
-            enemyKilled.text = "Enemies Killed: " + enemyHit;
-            
-        }
+       
 
        
     }

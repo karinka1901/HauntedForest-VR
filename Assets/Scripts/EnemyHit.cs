@@ -20,7 +20,7 @@ public class EnemyHit : MonoBehaviour
     [SerializeField]
     private Vector3 enemyDestination;
 
-    public PLayersHealth playersHealth;
+    private PLayersHealth playersHealth;
     public int damageNum;
 
    public SFXControl sfxControl;
@@ -33,6 +33,7 @@ public class EnemyHit : MonoBehaviour
     {
         //player = GameObject.FindGameObjectWithTag("Player").transform;
         playerLocation = FindObjectOfType<LocationTracker>();
+        playersHealth = FindObjectOfType<PLayersHealth>();
         enemyDestination = playerLocation.GetComponent<Transform>().position;
         rb = GetComponent<Rigidbody>();
         enemy = GetComponent<NavMeshAgent>();
@@ -43,24 +44,20 @@ public class EnemyHit : MonoBehaviour
 
     void Update()
     {
-        if (!playersHealth.isDead || !playersHealth.gameWon)
+        if (playersHealth.isDead || playersHealth.isCollected)
+        {
+            Debug.Log("HEHAEAJKLAS");
+            Destroy(this.gameObject);
+        }
+
+        else if (!playersHealth.isDead || !playersHealth.isCollected)
         {
             enemyDestination = playerLocation.GetComponent<Transform>().position;
             enemy.SetDestination(enemyDestination);
             Quaternion rotation = Quaternion.LookRotation(enemyDestination - transform.position);
             transform.rotation = rotation * Quaternion.Euler(0, 90, 0);
         }
-        if(playersHealth.isDead || playersHealth.isCollected)
-        {
-            //enemyDestination = this.transform.position;
-            this.gameObject.SetActive(false);
-            Destroy(this.gameObject);
-            return;
-        }
 
-        
-            
-        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -70,13 +67,14 @@ public class EnemyHit : MonoBehaviour
         {
             //hitParticles.Play();
             health -= damageNum;
-            playersHealth.enemyHit += 1;
+           
 
             Destroy(other.gameObject);
             if (health <= 0)
             {
-                hitParticles.Play();
-                Destroy(this.gameObject);
+               // hitParticles.Play();
+                Destroy(this.gameObject); 
+                playersHealth.enemyHit += 1;
                 
             }
             

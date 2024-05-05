@@ -6,10 +6,12 @@ public class TreasureScript : MonoBehaviour
 {
 
     public bool isCollected;
+    private PLayersHealth player;
    
     // Start is called before the first frame update
     void Start()
     {
+        player = FindObjectOfType<PLayersHealth>();
         isCollected = false;
        
     }
@@ -17,7 +19,10 @@ public class TreasureScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (player.isDead)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
    

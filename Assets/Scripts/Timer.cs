@@ -17,20 +17,19 @@ public class CountdownTimer : MonoBehaviour
     void Update()
     {
         // Update the current time
-        currentTime -= Time.deltaTime;
+        
 
-        if (playersHealth.gameON)
+        if (playersHealth.gameON && currentTime >= 0)
         {
             DisplayTime(currentTime);
+            currentTime -= Time.deltaTime;
+        }
+        else if (currentTime <= 0)
+        {
+            playersHealth.isDead = true;
         }
         
 
-        if (currentTime <= 0)
-        {
-            currentTime = 0;
-            playersHealth.isDead = true;
-            
-        }
     }
 
     void DisplayTime(float timeInSeconds)

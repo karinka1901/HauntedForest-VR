@@ -27,7 +27,7 @@ public class SpawnController : MonoBehaviour
               
         }
 
-        if(player.gameWon || player.isDead)
+        if(player.isCollected || player.isDead)
         {
             Destroy(this);
             
