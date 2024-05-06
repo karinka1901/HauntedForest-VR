@@ -6,9 +6,11 @@ public class CountdownTimer : MonoBehaviour
     public float totalTime = 60.0f; 
     private float currentTime;
     public PLayersHealth playersHealth;
+    public Light directionalLight;
 
-    public Text timerText; 
+    public Text timerText;
 
+    
     void Start()
     {
         currentTime = totalTime;
@@ -23,6 +25,8 @@ public class CountdownTimer : MonoBehaviour
         {
             DisplayTime(currentTime);
             currentTime -= Time.deltaTime;
+
+         
         }
         else if (currentTime <= 0)
         {
