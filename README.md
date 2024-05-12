@@ -21,6 +21,7 @@ https://youtu.be/uFQuhGEWLjU?si=T_SJVnEM4-iaUn4e
 All the environment and enemy models were created by me in Blender.
 
 ![image](https://github.com/karinka1901/VR-Project/assets/60856417/fd9b8b8b-0d57-42e1-888a-c25ce3abf069)
+![image](https://github.com/karinka1901/Haunted-Forest-VR-/assets/60856417/4944ac50-6eb2-4f3b-a3de-e22af115b36e)
 ![image](https://github.com/karinka1901/VR-Project/assets/60856417/7d2ea8c8-7184-47fc-8478-56e0f364e5fd)
 ![image](https://github.com/karinka1901/VR-Project/assets/60856417/fcc7e3f6-40ac-4ebf-bad2-604a8c0ddf24)
 ![image](https://github.com/karinka1901/VR-Project/assets/60856417/f8eaf0f8-91a4-4364-828b-82322cc2fab1)
