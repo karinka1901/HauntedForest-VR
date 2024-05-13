@@ -1,3 +1,5 @@
+![image](https://github.com/karinka1901/HauntedForest-VR/assets/60856417/4a601ae4-e690-4eef-8607-726b4e506dc2)
+
 
 # HAUNTED FOREST (VR)
 
