@@ -1,8 +1,5 @@
 ![image](https://github.com/karinka1901/HauntedForest-VR/assets/60856417/4a601ae4-e690-4eef-8607-726b4e506dc2)
 
-
-# HAUNTED FOREST (VR)
-
 The "Haunted Forest VR" project is a 3D first-person shooter game set in a dark and
 eerie forest filled with various monsters. The objective of the game is to locate and
 destroy a randomly spawned object within a time limit of 60 seconds while fending off
