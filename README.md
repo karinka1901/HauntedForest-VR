@@ -1,3 +1,9 @@
+![Built with Unity](https://img.shields.io/badge/Unity-000000?logo=unity&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?logo=csharp&logoColor=white)
+![Built for VR](https://img.shields.io/badge/VR-0055FF?logo=steamvr&logoColor=white)
+![Blender](https://img.shields.io/badge/Blender-3D%20Assets-F5792A?logo=blender&logoColor=white)
+
+
 ![image](https://github.com/karinka1901/HauntedForest-VR/assets/60856417/4a601ae4-e690-4eef-8607-726b4e506dc2)
 
 The "Haunted Forest VR" project is a 3D first-person shooter game set in a dark and
@@ -10,9 +16,9 @@ experience.
 
 ## Demo
 
-https://karinka1901.itch.io/haunted-forest-vr
+[Download from Itch.io](https://karinka1901.itch.io/haunted-forest-vr)
 
-https://youtu.be/uFQuhGEWLjU?si=T_SJVnEM4-iaUn4e
+[Watch demo on Youtube](https://youtu.be/uFQuhGEWLjU?si=T_SJVnEM4-iaUn4e)
 
 
 ## GAME OVERVIEW
